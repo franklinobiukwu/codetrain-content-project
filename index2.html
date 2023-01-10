@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap Day 2: Week 6</title>
+</head>
+<body>
+
+    <!-- 5 PARAGRAPH -->
+    <div class="container">
+        <div class="row">
+            <p class="lead text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum rerum, quo facilis ducimus voluptates autem quod obcaecati sit sunt similique incidunt minus esse quos quasi! Nostrum totam rerum ea accusamus numquam, provident natus omnis.
+            </p>
+            <p class="lead text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum rerum, quo facilis ducimus voluptates autem quod obcaecati sit sunt similique incidunt minus esse quos quasi! Nostrum totam rerum ea accusamus numquam, provident natus omnis.
+            </p>
+            <p class="lead text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum rerum, quo facilis ducimus voluptates autem quod obcaecati sit sunt similique incidunt minus esse quos quasi! Nostrum totam rerum ea accusamus numquam, provident natus omnis.
+            </p>
+            <p class="lead text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum rerum, quo facilis ducimus voluptates autem quod obcaecati sit sunt similique incidunt minus esse quos quasi! Nostrum totam rerum ea accusamus numquam, provident natus omnis.
+            </p>
+            <p class="lead text-uppercase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum rerum, quo facilis ducimus voluptates autem quod obcaecati sit sunt similique incidunt minus esse quos quasi! Nostrum totam rerum ea accusamus numquam, provident natus omnis.
+            </p>
+            <blockquote class="blockquote">
+                <p>A man who does not want his friend to be a king can never be the friend of a king.</p>
+                <footer class="blockquote-footer">Anonymous in <cite>The strange Book</cite> </footer>
+            </blockquote>
+        </div>
+
+        <div class="row">
+            <button type="button" class="btn btn-primary">Button 1</button>
+            <button type="button" class="btn btn-default">Button 2</button>
+            <button type="button" class="btn btn-warning">Button 3</button>
+            <button type="button" class="btn btn-danger">Button 4</button>
+            <button type="button" class="btn btn-info">Button 5</button>
+            <button type="button" class="btn btn-link">Button 6</button>
+            <button type="button" class="btn btn-light">Button 7</button>
+            <button type="button" class="btn btn-dark">Button 8</button>
+            <button type="button" class="btn btn-success">Button 9</button>
+        </div>
+        
+    </div>
+    
+    <!-- 2 RESPONSIVE IMAGES -->
+    <div class="container">
+        <div class="row">
+            <!-- IMAGE 1 -->
+            <div class="col-md-6">
+                <img src="images/pexels-jane-doan-1171170.jpg" alt="fruit" class="img-fluid">
+            </div>
+            <!-- IMAGE 2 -->
+            <div class="col-md-6">
+                <img src="images/pexels-pixabay-36736.jpg" alt="fruit" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- FORM AND TABLE -->
+    <div class="container">
+        <div class="row">
+            <!-- FORM -->
+            <form action="" class="form col-md-6">
+                <div class="form-group row">
+                    <label for="fullname" class="col-md-3 control-label">Full Name</label>
+                    <div class="col-md-9">
+                        <input type="text" placeholder="Full name" class="form-control" id="fullname">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-3 control-label">Email</label>
+                    <div class="col-md-9">
+                        <input type="email" placeholder="Email" class="form-control" id="email">
+                    </div>
+                </div>
+
+                    <div class="form-group row">
+                        <label for="userid" class="col-md-3 control-label">User Id</label>
+                        <div class="col-md-9">
+                            <input type="number" readonly class="form-control-plaintext" id="userid" value="001" placeholder="001">
+                        </div>
+                    </div>
+                
+
+                <div class="form-group row">
+                    <label for="choosetype" class="col-md-3 control-label">Choose type</label>
+                    <div class="col-md-9">
+                        <select name="" id="" class="form-control" id="choosetype">
+                            <option value="vanilla">Vanilla</option>
+                            <option value="classic">Classic</option>
+                            <option value="prime">Prime</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- RADIO BUTTON STARTS -->
+                <fieldset class="form-group row">
+                    <div class="col-md-3">
+                        <legend class="col-form-label"> Happy? </legend>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-check form-check-inline">
+                            <!-- <label>Happy?</label> -->
+                            <input type="radio" name="happy" class="form-check-input" id="happyyes" value="yes"> <label class="form-check-label" for="happyyes">Yes</label>
+                        </div>
+        
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="happy" class="form-check-input"id="happyno" value="no"> <label class="form-check-label" for="happyno">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- RADIO BUTTON STOPS -->
+                <div class="form-group row">
+                    <label class="col-md-3">Upload file</label>
+                    <div class="col-md-9">
+                        <input type="file" class="form-control-file">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Shoot!</button>
+            </form>
+            <!-- TABLE -->
+            <div class="col-md-6">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>S/n</th>
+                            <th>Fruit Name</th>
+                            <th>Color</th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Orange</td>
+                            <td>Orange</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Strawberry</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Apple</td>
+                            <td>Green</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
